@@ -7,6 +7,7 @@ var colors = [[103, 58, 183],[103, 58, 183],[32, 222, 179],[255, 152, 0]];
 var fsize = '6rem';
 var flarge = '9rem';
 var fsmall = '2rem';
+var storm = 2000;
 var btnstyle = {
   l : '20%',
   h : '8.333%',
@@ -16,16 +17,20 @@ if (wh > 361 && wh <= 768 ){
   fsize = '3rem';
   flarge = '4.5rem';
   fsmall = '1.5rem';
+  storm = 150;
+
   btnstyle.l = '60%';
 } else if (wh <= 361) {
   fsize = '2.5rem';
   flarge = '4rem';
   fsmall = '1rem';
+  storm = 150;
   btnstyle.l = '60%';
 } else if (wh > 768 && wh <= 1000) {
   var fsize = '4.5rem';
   var flarge = '7.5rem';
   var fsmall = '1.5rem';
+  storm = 200;
 }
 else {
 
@@ -57,7 +62,7 @@ function draw() {
 
   system.run();
   if (start) {
-    if (counter < 200 ){
+    if (counter < storm ){
     system.addParticle();
     }
   }
@@ -179,7 +184,7 @@ var Particle = function(position, col) {
 
 Particle.prototype.run = function() {
   this.update();
-  //this.displayBacterio();
+  this.displayBacterio();
   this.displayXX();
 };
 
@@ -246,7 +251,7 @@ var ParticleSystem = function(position) {
 };
 
 ParticleSystem.prototype.addParticle = function() {
-  this.particles.push(new Particle(this.origin, 2 ));
+  this.particles.push(new Particle(this.origin, round(random(0,3)) ));
 };
 
 ParticleSystem.prototype.run = function() {
