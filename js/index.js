@@ -57,7 +57,7 @@ function draw() {
 
   system.run();
   if (start) {
-    if (counter < 6000 ){
+    if (counter < 1500 ){
     system.addParticle();
     }
   }
@@ -179,8 +179,8 @@ var Particle = function(position, col) {
 
 Particle.prototype.run = function() {
   this.update();
-  this.displayBacterio();
-  //this.displayXX();
+  //this.displayBacterio();
+  this.displayXX();
 };
 
 // Method to update position
