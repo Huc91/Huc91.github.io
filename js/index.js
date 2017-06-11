@@ -36,7 +36,7 @@ else {
   location.reload();
 }*/
 function setup() {
-  createCanvas(wh-100, hg);
+  createCanvas(wh, hg);
   background(0, 0);
   system = new ParticleSystem(createVector(width/2, 50));
   ranXX = random(50);
@@ -57,7 +57,7 @@ function draw() {
 
   system.run();
   if (start) {
-    if (counter < 1500 ){
+    if (counter < 200 ){
     system.addParticle();
     }
   }
@@ -186,7 +186,7 @@ Particle.prototype.run = function() {
 // Method to update position
 Particle.prototype.update = function(){
   this.velocity.add(this.acceleration);
-  this.position.add(this.velocity);
+  this.position.add(this.velocity).add(this.velocity);
   this.lifespan -= 2;
 };
 
