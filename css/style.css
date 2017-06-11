@@ -1,0 +1,225 @@
+@font-face {
+  font-family: Grotto;
+  src: url(../fonts/grotto.ttf);
+  font-weight: 400;
+
+}
+
+html {
+  height: 100%!important;
+  width: 100%!important;
+  font-size: 12px;
+  font-family: "Grotto" !important;
+  overflow: hidden;
+}
+body {
+  height: 100%!important;
+  width: 100%!important;
+  font-family: "Grotto" !important;
+}
+#root{
+  height: 100% !important;
+  width: 100%!important;
+}
+
+#defaultCanvas0{
+  position: absolute;
+  top: 0;
+}
+#check {
+  position: fixed;
+  display: grid;
+}
+.land {
+  font-family: "Grotto" !important;
+  font-size: 0rem;
+  line-height: 7.5rem;
+  padding: 3rem;
+  height: 100%;
+  width: 100% !important;
+  /*background-color: #512CA8*/;
+  background-color: #fafafa;
+  color: #212121;
+  /*color: #e88080;*/
+
+border: 20px solid transparent;
+
+-moz-border-image: -moz-linear-gradient(top left, #FFAA9C 0%, #B183CD 50%, #00F2AE 100%);
+-webkit-border-image: -webkit-linear-gradient(top left, #FFAA9C 0%, #B183CD 50%, #00F2AE 100%);
+border-image: linear-gradient(to bottom right, #FFAA9C 0%, #B183CD 50%, #00F2AE 100%);
+
+border-image-slice: 1;
+}
+
+#hello {
+  font-size: 6rem;
+  transition: font-size 0.5s ease-in;
+}
+
+#catch{
+  display: none;
+}
+
+.catch p, .catch span {
+  font-size: 0rem;
+  color: #212121;
+  transition: all 0.5s ease-in;
+  margin-bottom: 0px !important;
+
+}
+
+#im, #ita, #grf, #fro {
+  margin-left: 16.666%;
+}
+#nam{
+  height: 7.5rem;
+
+}
+#grf{
+  float: left;
+  margin-left: 16.66%;
+  margin-right: 18rem;
+}
+
+#and {
+  margin-left: 8.33%;
+  margin-right: 8.33%;
+}
+
+.me {
+  height: 95%;
+  width: 100%;
+  background-color: #1DE8B5;
+
+}
+
+.btn {
+  position: absolute;
+  left: 19.5%;
+  border-radius: 0;
+  border-bottom style: solid;
+  border-bottom-width: 3px;
+  border-bottom-color:  #0f735a;
+/* right: 0; */
+  width: 0%;
+  height: 0%;
+  bottom: 9rem;
+  background-color: #1DE8B5;
+  opacity: 0;
+  color: black;
+  font-size: 0rem;
+  z-index: 999 !important;
+  transition: all 0.25s ease-in;
+}
+
+button:focus {
+  outline: none !important;
+}
+#more {
+  position: absolute;
+  width: 48px;
+  right: 6rem;
+  bottom: 9rem;
+
+}
+
+img {
+  max-width: 100%;
+}
+
+#btn-txt {
+
+}
+@media screen and (max-width: 1000px) {
+
+  .land {
+    font-size: 0rem;
+    line-height: 5.5rem;
+    padding: 2rem;
+  }
+  #hello {
+    font-size: 4.5rem;
+  }
+
+  #grf{
+    margin-right: 15rem;
+  }
+
+  #nam{
+    height: 5.5rem;
+
+  }
+
+  #check {
+    position: fixed;
+    display:block;
+  }
+
+}
+@media screen and (max-width: 768px) {
+
+  .land {
+    font-size: 0rem;
+    line-height: 4rem;
+    padding: 1.5rem;
+  }
+  #hello {
+    font-size: 3rem;
+    margin-bottom: 0px !important;
+  }
+
+  #nam{
+    height: 4rem;
+
+  }
+
+  #im, #ita, #grf, #fro {
+    margin-left: 0%;
+  }
+
+  #grf{
+    float: left;
+    margin-left: 0%;
+    margin-right: 0%;
+    float: none;
+  }
+
+  #and {
+    margin-left: 0%;
+    margin-right
+}
+
+#check {
+  position: fixed;
+  display: list-item;
+}
+
+.btn, #more {
+
+  bottom: 3rem;
+}
+
+}
+
+@media screen and (max-width: 361px) {
+
+  .land {
+    font-size: 0rem;
+    line-height: 3rem;
+    padding: 1rem;
+  }
+  #hello {
+    font-size: 2.5rem;
+  }
+
+  #nam{
+    height: 3rem;
+
+  }
+
+  #check {
+    position: fixed;
+    display: none;
+  }
+
+}
