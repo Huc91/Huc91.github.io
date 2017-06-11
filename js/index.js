@@ -180,7 +180,7 @@ var Particle = function(position, col) {
 Particle.prototype.run = function() {
   this.update();
   this.displayBacterio();
-  this.displayXX();
+  //this.displayXX();
 };
 
 // Method to update position
