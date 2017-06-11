@@ -246,7 +246,7 @@ var ParticleSystem = function(position) {
 };
 
 ParticleSystem.prototype.addParticle = function() {
-  this.particles.push(new Particle(this.origin, round(random(0,3)) ));
+  this.particles.push(new Particle(this.origin, 2 ));
 };
 
 ParticleSystem.prototype.run = function() {
