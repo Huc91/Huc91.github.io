@@ -6,21 +6,15 @@
 }
 
 html {
-  height: 100%!important;
-  width: 100%!important;
+  width: 100%;
   font-size: 12px;
   font-family: "Grotto" !important;
-  overflow: hidden;
 }
 body {
-  height: 100%!important;
-  width: 100%!important;
+  width: 100%;
   font-family: "Grotto" !important;
 }
-#root{
-  height: 100% !important;
-  width: 100%!important;
-}
+
 
 #defaultCanvas0{
   position: absolute;
@@ -30,19 +24,20 @@ body {
   position: fixed;
   display: grid;
 }
+/*####landing####*/
 .land {
+  height: 100vh;
   font-family: "Grotto" !important;
   font-size: 0rem;
   line-height: 7.5rem;
   padding: 3rem;
-  height: 100%;
   width: 100% !important;
   /*background-color: #512CA8*/;
   background-color: #fafafa;
   color: #212121;
   /*color: #e88080;*/
 
-border: 20px solid transparent;
+border: 1.5rem solid transparent;
 
 -moz-border-image: -moz-linear-gradient(top left, #FFAA9C 0%, #B183CD 50%, #00F2AE 100%);
 -webkit-border-image: -webkit-linear-gradient(top left, #FFAA9C 0%, #B183CD 50%, #00F2AE 100%);
@@ -130,6 +125,53 @@ img {
 #btn-txt {
 
 }
+
+/*####Projects####*/
+#project {
+  padding: 3rem
+}
+
+#project h1 {
+  font-size: 4.5rem;
+}
+.project__card {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.card__title {
+  font-size: 2.5rem;
+}
+
+.card__img-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  padding: 0.5rem 0 0.5rem 0;
+}
+
+.card__img-container--img {
+  align-self: start;
+  width: 66%;
+  transition: width 1s;
+}
+
+.button-reduce-enlarge {
+  width: 2rem;
+  height: 2rem;
+  background-color: blue;
+}
+
+.card__text {
+  font-size: 1.5rem;
+}
+
+
+/*Mediaqueries*/
+
 @media screen and (max-width: 1000px) {
 
   .land {
