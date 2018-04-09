@@ -223,3 +223,36 @@ img {
   }
 
 }
+
+/*hyper narrow screen*/
+
+@media screen and (min-width: 768px) and (max-height: 670px) and (min-height: 400px) {
+
+  .land {
+    font-size: 0rem;
+    line-height: 5.5rem;
+    padding: 2rem;
+  }
+  #hello {
+    font-size: 4.5rem;
+  }
+
+  #grf{
+    margin-right: 15rem;
+  }
+
+  #nam{
+    height: 5.5rem;
+
+  }
+
+  #check {
+    position: fixed;
+    display:block;
+  }
+
+  .btn, #more {
+    bottom: 3rem;
+  }
+
+}
